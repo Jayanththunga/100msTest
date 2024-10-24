@@ -75,7 +75,7 @@ public class MainTest {
         }
     }
 
-    private static void checkVideoActive() throws IOException, InterruptedException {
+    private static void checkVideoActive() throws IOException {
         String img1 = "Images/imageBefore.png";
         String img2 = "Images/imageAfter.png";
         takeScreenshot(img1);
@@ -128,7 +128,7 @@ public class MainTest {
         return ((avgDifference / 255) * 100) > 1.5;
     }
 
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) throws IOException {
         LaunchApp();
 
         if(CheckAppLaunched()) System.out.println("App Launched Successfully");
